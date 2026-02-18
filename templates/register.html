@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block insert %}
+{% if error %}
+<div class="alert alert-danger" role="alert">
+    {{ error }}
+</div>
+{% endif %}
+<form action="/register" method="POST">
+    <div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input type="text" name="name" id="name" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" name="email" id="email" class="form-control" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" name="password" id="password" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock insert %}
