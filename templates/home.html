@@ -1,2 +1,11 @@
 {% extends "base.html" %}
-{% block insert %}<h1 class="text-center text-danger">Hi this is Auth App.</h1>{% endblock insert %}
+{% block insert %}
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+  <div class="card shadow text-center" style="width: 100%; max-width: 500px;">
+    <div class="card-body py-5">
+      <h1 class="card-title text-danger">Hi this is Auth App.</h1>
+      <p class="card-text text-muted">Please login or register to continue.</p>
+    </div>
+  </div>
+</div>
+{% endblock insert %}
